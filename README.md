@@ -49,7 +49,11 @@
 #### 5. 瑞数6 api
 #### 用法：
     测试站点：aHR0cDovL2VwdWIuY25pcGEuZ292LmNu
-    运行：ruishu6_example/ruishu6_nmpa.py
+    运行：ruishu6_api/test.py
+#### docker 镜像创建
+    1. cd ruishu6_api
+    2. docker build -t ruishu6_api .
+    3. docker run -d -p 3000:3000 ruishu6_api
 ### 注意
     1.可以在app.py对请求加上代理避免接口所在的机器被封
     2.可以集成到scrapy的下载中间组件
@@ -59,6 +63,7 @@
 #### 6. 瑞数6 example
 #### 用法：
     测试站点：aHR0cHM6Ly8xMTQuMjUxLjEwLjkyL1hZUFQvdW5pdC9saXN0
+    运行：ruishu6_example/ruishu6_nmpa.py
 ### 运行结果:
 ![图片描述](./pics/ruishu6_nmpa.png)
 
