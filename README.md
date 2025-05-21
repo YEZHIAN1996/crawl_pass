@@ -67,6 +67,26 @@
 ### 运行结果:
 ![图片描述](./pics/ruishu6_nmpa.png)
 
+#### 7. 加速乐
+#### 用法：
+    测试站点：aHR0cHM6Ly93d3cubXBzLmdvdi5jbi9uMjI1MzUzNC9uMjI1Mzg3NS9uMjI1Mzg3Ny9pbmRleC5odG1s
+### 运行结果:
+![图片描述](./pics/jsl.png)
+#### 8. aes加密
+#### 用法：
+    测试站点：aHR0cHM6Ly9qenNjLm1vaHVyZC5nb3YuY24vQVBpL3dlYkFwaS9kYXRhc2VydmljZS9xdWVyeS9jb21wL2xpc3Q=
+### 运行结果:
+![图片描述](./pics/aes.png)
+#### 9. 国密加密
+#### 用法：
+    测试站点：aHR0cHM6Ly9jcmVkaXQuaGQuZ292LmNuL3p4X3dlYnNpdGUvd2Vic2l0ZS9zZ3MveHpjZmZy
+### 运行结果:
+![图片描述](./pics/sm.png)
+### 简述
+    1.请求的时候有两个参数是加密的queryContent，sign，另外还有一个13位时间戳
+![图片描述](./pics/req.png)
+    2.成功返回的响应是乱码的，需要将其转换成base64传入json
+![图片描述](./pics/resp.png)
 ### 参与贡献
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
